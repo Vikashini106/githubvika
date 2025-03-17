@@ -1,0 +1,164 @@
+import random
+
+# Define flashcards (English: Translation)
+flashcards = {
+    "Hello": "Hola",
+    "Goodbye": "Adiós",
+    "You're Welcome": "De nada",
+    "Thank you": "Gracias",
+    "Please": "Por favor",
+    "Yes": "Sí",
+    "No": "No",
+    "Mother": "Madre",
+    "Father": "Father",
+    "Nice to meet you":"Mucho gusto",
+    "The man": "El hombre",
+    "The boy": "El niño",
+    "The woman": "La mujer",
+    "The girl": "La niña",
+    "A woman": "Una mujer",
+    "I am a boy": "Yo soy un niño",
+    "The apple": "La manzana",
+    "You're Vika": "Tú eres Vika",
+    "She is Vika": "Ella es Vika",
+    "The bread": "El pan",
+    "The milk": "La leche",
+    "The water": "El agua",
+    "I eat, you eat, he eats": "Yo como, tú comes, él come",
+    "I drink, you drink, he drinks": "Yo bebo, tú bebes, él bebe",
+    "Dog": "Perro",
+    "Cat": "Gato",
+    "Do you have a dog?": "Tú tienes un perro?",
+    "Yes, I have a dog": "Sí, yo tengo un perro",
+    "Good morning": "Buenos Días",
+    "Good Night": "Buenas Noches",
+    "Pardon": "Perdon",
+    "Sorry": "Lo siento",
+    "Excuse me": "Disculpe",
+    "Do you speak English?": "Tú hablas Inglés?",
+    "Yes, I speak English": "Yo hablas Inglés",
+    "I speak Spanish": "Yo hablas Español",
+    "See you soon": "Hasta pronto",
+    "See you later": "Hasta luego",
+    "How are you?": "Como estás?",
+    "I'm fine": "Estoy bien",
+    "Do you need help?": "Necesitas ayuda?",
+    "What is the phone number of Vika?": "Cuál es el número de teléfono de Vika",
+    "Ask Vika": " Pregúntale a Vika",
+    "Where is the airport?" : "Dónde está el aeropuerto?",
+    "Do you have a phone?": "Tienes un teléfono?",
+    "Ok, here you have my phone number": "Ok, aquí tienes mi número de teléfono",
+    "What is your name?": "Cómo te ilamas?",
+    "My name is Vika": "Mi ilamo Vika",
+    "passport": "Pasaporte",
+    "suitcase": "Maleta",
+    "I need water": "Yo necesito agua",
+    "I have a reservation in the hotel": "Yo tengo una reserva en el hotel",
+    "The taxi is here": "El taxi está aquí",
+    "The train": "El tren",
+    "The money": "El dinero",
+    "A bus": "Un autobús",
+    "A ticket to Singapore, please": "Un boleto a Singapore, por favor",
+    "I have your ticket to Sentosa": "Yo tengo tú boleto a Sentosa",
+    "it is": "Está",
+    "the bank": "El banco",
+    "the museum": "El museo",
+    "the bathroom": "El baño",
+    "Where is the bathroom?": "Dónde está el baño?",
+    "my street": "Mi calle",
+    "In the supermarket": "En el supermeracado",
+    "The hotel is closed": "El hotek está cerrado",
+    "The hospital is here": "El hospital está aquí",
+    "One": "Uno",
+    "Zero": "Cero",
+    "Two": "Dos",
+    "Three": "Tres",
+    "Four": "Cuatro",
+    "Five": "Cinco",
+    "Six": "Seis",
+    "Seven": "Siete",
+    "Eight": "Ocho",
+    "Nine": "Nueve",
+    "Ten": "Diez",
+    "The table": "La mesa",
+    "The people": "Las personas",
+    "For 2 people": "Para dos personas",
+    "A table for 3 people": "Una mesa para tres personas",
+    "I need a table": "Yo necesito una mesa",
+    "The meat": "La carne",
+    "The cheese": "El queso",
+    "With fish": "Con pescado",
+    "A cheese sandwich": "Un sándwich de queso",
+    "A meat sandwich with cheese": " Un sándwich de carne con queso",
+    "A fish burger": "Un hamburgesa de pescado",
+    "Coffee": "Café",
+    "The sugar": "El azúcar",
+    "The cup": "El taza",
+    "A cup": "Una taza",
+    "The glass": "El vaso",
+    "A glass": "Un vaso",
+    "A cup of coffee, please": "Una taza de café, por favor",
+    "The orange": "La naranja",
+    "The juice": "El jugo",
+    "She eats fish at the restaurant": "Elle come pescado en el restaurante",
+    "Without cheese": "Sin queso",
+    "An orange juice, please": "Un jugo de naranja, por favor",
+    "I want to pay the check": "Yo quiero pagar la cuenta",
+    "I want a salad": "Yo quiero una ensalada",
+    "The restaurant is closed": "El restaurante está cerrado",
+    "Without salt": "Sin sal",
+    "The salad, with or without salt?": " La ensalada, con o sin sal?",
+    "The bill, please": "La cuenta, por favor",
+    "I need to pay": "Yo necesito pagar",
+    "Excuse me, the check please!": "Disculpe, la cuenta, por favor!",
+    "Where are my keys?": "Dónde están mis ilaves?",
+    "Your keys?": "Tus ilaves?",
+    "Yes, I need to go to work": "Sí, necesito ir al trabajo",
+    "I need the keys of my car!": "Necesito las ilaves de mi carro!",
+    "Your keys are here, on the table": "Tus ilaves están aquí enla mesa!",
+    "Pardon, I am tired. I work a lot!" : "Perdón, estoy cansada. Trabajo mucho!",
+    "Do you want coffee?": "Quieres café?",
+    "What?": "Qué?",
+    "That is salt!": "Eso es sal!",
+    "I need more coffee": "Necesito más café",
+    "A red coat": "Un abrigo rojo",
+    "An american friend": "Una amiga americana",
+    "A perfect family": "Una familia perfecta",
+    "Would you like a coffee or tea?": "Le gustaría un café o té?",
+    "I would like a coffee, please." : "Me gustaría un café, por favor.",
+    "I would like some sugar.": "Me gustaría un poco de azúcar.",
+
+
+
+
+
+}
+
+
+def start_flashcards():
+    print("Welcome to the Spanish flashcards!\n")
+    while True:
+        # Randomly select a flashcard
+        english_word, translation = random.choice(list(flashcards.items()))
+
+        # Show the English word
+        print(f"Translate this word: {english_word}")
+
+        # Ask for the user's input
+        user_answer = input("Your translation: ")
+
+        # Check if the answer is correct
+        if user_answer.strip().lower() == translation.lower():
+            print("Correct!\n")
+        else:
+            print(f"Oops! The correct translation is: {translation}\n")
+
+        # Ask if they want to continue
+        continue_choice = input("Do you want to continue? (y/n): ")
+        if continue_choice.lower() != 'y':
+            print("Thank you for using the flashcards! Goodbye.")
+            break
+
+
+# Start the flashcard program
+start_flashcards()
